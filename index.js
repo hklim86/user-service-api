@@ -36,7 +36,7 @@ app.post("/docker/port/:port/setup", function (req, res) {
                     }],
                 },
                 Binds: [`${process.cwd()}/tokens:/app/tokens`],
-                Memory: 2 * 1024 * 1024 * 1024,
+                Memory: 10 * 1024 * 1024 * 1024,
                 RestartPolicy: {
                     Name: 'always' // Restart policy
                 }
